@@ -13,13 +13,16 @@ var haiku2 = arr[3];
     haiku2 = haiku2.toString();
     haiku2 = haiku2.toUpperCase();
 
+
 var concatinate = [];
 
 cancatinate = concatinate.concat(haiku1);
 concatinate = concatinate.concat(haiku2);
 
-console.log("This is it :  ", concatinate);
-var result = spt.join('');
+
+console.log(concatinate);
+// var spt = concatinate.split('\n');
+// var result = spt.join('');
 
 fs.writeFileSync(process.argv[4],result);
 // fs.writeFileSync(process.argv[4],haiku2);

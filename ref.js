@@ -9,7 +9,7 @@ fs.readFile(arr[3], function(err, buffer){
   }
   else{
     var contents = buffer.toString();
-    var contentsReversed = contents.split('').reverse().join('');
+    // var contentsReversed = contents.split('').reverse().join('');
     fs.writeFileSync(arr[4], contentsReversed, function(err) {
       if(err){
         console.error(err.stack);
